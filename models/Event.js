@@ -24,7 +24,7 @@ Event.init(
       defaultValue: DataTypes.NOW,
     },
     start_date: {
-      type: DataTypes.DATE,
+      type: DataTypes.DATE
     },
     end_date: {
       type: DataTypes.DATE,
