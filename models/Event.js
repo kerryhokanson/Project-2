@@ -23,6 +23,12 @@ Event.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
+    start_date: {
+      type: DataTypes.DATE,
+    },
+    end_date: {
+      type: DataTypes.DATE,
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
