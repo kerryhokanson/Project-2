@@ -5,31 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Online Calendar</title>
-  {{!-- <link
-      rel="stylesheet"
-      href="https://uicdn.toast.com/tui.time-picker/latest/tui-time-picker.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://uicdn.toast.com/tui.date-picker/latest/tui-date-picker.min.css"
-    />
-    <link rel="stylesheet" href="../dist/toastui-calendar.css" />
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/app.css" />
-    <link rel="stylesheet" href="./styles/icons.css" /> --}}
     <style>
       #calendar {
-        width: 50%;
+        width: 100%;
         
       }
     </style>
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar/index.global.min.js'></script>
 </head>
 
 <body>
   <header class="display-flex justify-space-between align-center p-2">
     <h1> Welcome to your online calendar app
     </h1>
+    <nav>
+      <button>Let's Plan Somthing</button>
+      <button>Let's See Your Calendar</button>
+    </nav>
   </header>
   <main class="container container-fluid mt-5">
     {{{ body }}}
@@ -37,6 +28,5 @@
   <footer>
       
   </footer>
-  <script src="/js/calendar.js"></script>
 
 </html>
