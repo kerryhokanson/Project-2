@@ -24,6 +24,7 @@
     "moment": "^2.29.4",
     "mysql2": "^2.2.5",
     "sequelize": "^6.3.5",
+    "tui-calendar": "^1.15.3",
     "tui-date-picker": "^4.3.2",
     "tui-time-picker": "^2.1.5"
   },
