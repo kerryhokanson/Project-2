@@ -4,7 +4,7 @@ const { User, Event } = require('../models');
 const apiRoutes = require('./api');
 router.use('/api', apiRoutes);
 
-router.get('/calendar', (req, res) => {
+router.get('/', (req, res) => {
     try{
         res.render('calendar');
     } catch(err){
