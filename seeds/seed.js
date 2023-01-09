@@ -12,7 +12,7 @@ const seedDatabase = async () => {
         returning: true,
     });
 
-    for (const event of eventData) {
+    for  (const event of eventData) {
         await Event.create({
             ...event,
             user_id: users[Math.floor(Math.random() * users.length)].id,
@@ -20,4 +20,7 @@ const seedDatabase = async () => {
     }
 }
 
-seedDatabase();
+// seedDatabase();
+
+module.exports = seedDatabase;
+    
