@@ -1,9 +1,19 @@
 const router = require('express').Router();
 const { User, Event } = require('../models');
 
-router.get('/', (req, res) => {
+const apiRoutes = require('./api');
+router.use('/api', apiRoutes);
+
+router.get('/calendar', (req, res) => {
     try{
         res.render('calendar');
+    } catch(err){
+        res.status(500).json(err);
+    }
+});
+router.get('/homepage', (req, res) => {
+    try{
+        res.render('homepage');
     } catch(err){
         res.status(500).json(err);
     }
@@ -31,24 +41,5 @@ router.post('/event', async (req, res) => {
     }
 });
 
-router.get('/signup', async (req, res) => {
-    try{
-        res.render('signup');
-    } catch(err){
-        res.status(500).json(err);
-    }
-});
-
-router.post('/signup', async (req, res) => {
-    try {
-      const { name, email, password } = req.body;
-      const user = await User.create({ name, email, password });
-      console.log(user);
-      res.render('/calendar');
-    } catch (error) {
-      console.error(error);
-      res.status(500).send(error.message);
-    }
-  });
 
 module.exports = router;
