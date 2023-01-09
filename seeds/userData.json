@@ -1,21 +1,21 @@
 [
     {
-      "name": "Kerry",
+      "username": "Kerry",
       "email": "kerryhokanson@github.com",
       "password": "password12345"
     },
     {
-      "name": "Mitch",
+      "username": "Mitch",
       "email": "measterling13@github.com",
       "password": "password12345"
     },
     {
-      "name": "Ethan",
+      "username": "Ethan",
       "email": "ethansherrick@github.com",
       "password": "password12345"
     },
     {
-      "name": "Zhao",
+      "username": "Zhao",
       "email": "zhngzh527@github.com",
       "password": "password12345"
     }

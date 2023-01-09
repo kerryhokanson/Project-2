@@ -1,11 +1,6 @@
 
 const getEventData = async () => {
-  const response = await fetch("/api/users/events", {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
+  const response = await fetch("/api/users/events");
 
   if (response.ok) {
     console.log(response.body);
@@ -77,4 +72,4 @@ document.addEventListener("DOMContentLoaded", async function () {
   calendar.render();
 })
 
-const calendarEl = document.getElementById('calendar');
+// const calendarEl = document.getElementById('calendar');
