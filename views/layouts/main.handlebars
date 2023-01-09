@@ -15,17 +15,16 @@
     </head>
 
 <body>
-  <header class="display-flex justify-space-between align-center p-2">
-    <h1> Welcome to your online calendar app
-    </h1>
-    <nav>
-      <button>Let's Plan Somthing</button>
-      <button>Let's See Your Calendar</button>
-      <button onclick = location.href="/login">Log In</button>
-      <button onclick = location.href="/homepage">Homepage</button>
-
-    </nav>
-  </header>
+  <header class="bg-gray-300 py-2 px-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-gray-700"> Welcome to your online calendar app </h1>
+        <nav class="flex items-center">
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full">Let's Plan Something</button>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full">Let's See Your Calendar</button>
+          <button class="bg-green-500 text-white px-4 py-2 rounded-full" onclick = location.href="/login">Log In</button>
+          <button class="bg-gray-500 text-white px-4 py-2 rounded-full" onclick = location.href="/homepage">Homepage</button>
+        </nav>
+      </header>
+  
   <main class="container container-fluid mt-5">
     {{{ body }}}
   </main>
