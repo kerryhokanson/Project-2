@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User } = require('../../models');
+const {Event,  User } = require('../../models');
 
 router.post('/', async (req, res) => {
   try {
@@ -55,6 +55,19 @@ router.post('/logout', (req, res) => {
     });
   } else {
     res.status(404).end();
+  }
+});
+
+router.get('/events', async (req, res) => {
+  try {
+    const eventData = await Event.findAll();
+    const events = eventData.map((event) => event.get({plain: true}));
+    console.log(events);
+    res.status(200).json(events);
+
+  }
+  catch (err) {
+    res.status(400).json(err);
   }
 });
 

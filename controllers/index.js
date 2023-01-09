@@ -6,6 +6,13 @@ router.use('/api', apiRoutes);
 
 router.get('/', (req, res) => {
     try{
+        res.render('homepage');
+    } catch(err){
+        res.status(500).json(err);
+    }
+});
+router.get('/calendar', (req, res) => {
+    try{
         res.render('calendar');
     } catch(err){
         res.status(500).json(err);
@@ -26,6 +33,16 @@ router.get('/event', (req, res) => {
         res.status(500).json(err);
     }
 });
+router.get('/login', (req, res) => {
+    try{
+        res.render('login');
+    } catch(err){
+        res.status(500).json(err);
+    }
+});
+
+
+
 
 router.post('/event', async (req, res) => {
     try {
