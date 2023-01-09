@@ -18,6 +18,7 @@ const newEventForm = async (event) => {
     if (response.ok) {
       alert("success good job");
     } else {
+      console.log(response.message);
       alert("uh-oh you broke it");
     }
   }
